@@ -4,13 +4,11 @@
 
 ---
 
-~[Page xiv] Publisher's [web page for this book](http://shop.oreilly.com/product/0636920037316.do), including [errata](https://www.oreilly.com/catalog/errata.csp?isbn=0636920037316)~
+Publisher's [web page for this book](http://shop.oreilly.com/product/0636920038375.do), including [errata](https://www.oreilly.com/catalog/errata.csp?isbn=0636920038375)
 
-~[Page xiv] Author's [companion website](https://alignedleft.com/work/d3-book-2e)~
+Author's [blog post](https://cbrownley.wordpress.com/2016/03/02/foundations-for-analytics-with-python-from-non-programmer-to-hacker/) about the book
 
 [Page xvii] All of the Python scripts, input files, and output files are available at [https://github.com/cbrownley/foundations-for-analytics-with-python](https://github.com/cbrownley/foundations-for-analytics-with-python)
-
-~[Chapter4] [localhost:8888](http://localhost:8888/d3-book-2.0.3/) link (to sample files) for me, when local web server is running~
 
 
 | Directory or file (in root) | Explanation |
