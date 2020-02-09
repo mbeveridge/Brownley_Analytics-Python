@@ -25,6 +25,9 @@
 
 ## 1. Python Basics *[P.1-58]*
 
+* 'shebang' for Unix computers to find the version of Python to use (eg. `#!/usr/bin/env python3`) ...P.2
+* `chmod +x first_script.py` (in Terminal) to make the Python script executable ...P.6
+* `Ctrl+c` to stop a script ...P.7
 * data types : numbers, strings, dates
 * data containers : lists, tuples, dictionaries
 * programming conceps : control flow, functions, exceptions
