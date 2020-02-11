@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
 from math import exp, log, sqrt  # Page13
+import re  # Page19
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 10 15:45:49 2020
@@ -82,5 +83,20 @@ string2_list = string2.split(',')
 print("Output #23: {0}".format(string2_list))
 print("Output #24: {0} {1} {2}".format(string2_list[1], string2_list[5],\
 string2_list[-1]))
+
+
+# `join` function ...Page17
+print("Output #25: {0}".format(','.join(string2_list)))
+
+
+# `strip` functions ...Page17
+string3 = " Remove unwanted characters from this string.\t\t \n"
+print("Output #26: string3: {0:s}".format(string3))
+string3_lstrip = string3.lstrip()
+print("Output #27: lstrip: {0:s}".format(string3_lstrip))
+string3_rstrip = string3.rstrip()
+print("Output #28: rstrip: {0:s}".format(string3_rstrip))
+string3_strip = string3.strip()
+print("Output #29: strip: {0:s}".format(string3_strip))
 
 
