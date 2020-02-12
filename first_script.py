@@ -149,3 +149,13 @@ for word in string_list:
     if pattern.search(word):
         print("{:s}".format(pattern.search(word).group('match_word')))  # 2 closing brackets added. (Noted in Errata)
 
+
+# Substitute the letter "a" for the word "the" in the string ...Page22
+string = "The quick brown fox jumps over the lazy dog."
+string_to_find = r"The"
+pattern = re.compile(string_to_find, re.I)
+print("Output #40: {:s}".format(pattern.sub("a", string)))  # 2 closing brackets added. (Noted in Errata)
+
+                                
+                              
+                                
