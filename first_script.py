@@ -1,6 +1,7 @@
 #!/usr/bin/env python3
 from math import exp, log, sqrt  # Page13
 import re  # Page19
+from datetime import date, time, datetime, timedelta  # Page22
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 10 15:45:49 2020
@@ -155,6 +156,24 @@ string = "The quick brown fox jumps over the lazy dog."
 string_to_find = r"The"
 pattern = re.compile(string_to_find, re.I)
 print("Output #40: {:s}".format(pattern.sub("a", string)))  # 2 closing brackets added. (Noted in Errata)
+
+
+# Print today's date, as well as the year, month, and day elements ...Page23
+today = date.today()
+print("Output #41: today: {0!s}".format(today))
+print("Output #42: {0!s}".format(today.year))
+print("Output #43: {0!s}".format(today.month))
+print("Output #44: {0!s}".format(today.day))
+current_datetime = datetime.today()
+print("Output #45: {0!s}".format(current_datetime))
+
+
+# Calculate a new date using a timedelta ...Page23
+one_day = timedelta(days=-1)
+yesterday = today + one_day
+print("Output #46: yesterday: {0!s}".format(yesterday))
+eight_hours = timedelta(hours=-8)
+print("Output #47: {0!s} {1!s}".format(eight_hours.days, eight_hours.seconds))
 
                                 
                               
