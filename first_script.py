@@ -139,3 +139,13 @@ for word in string_list:
         count += 1
 print("Output #38: {0:d}".format(count))
 
+
+# Print the pattern each time it is found in the string ...Page21
+string = "The quick brown fox jumps over the lazy dog."
+string_list = string.split()
+pattern = re.compile(r"(?P<match_word>The)", re.I)  # </match_word> was an error. (Noted in Errata)
+print("Output #39:")
+for word in string_list:
+    if pattern.search(word):
+        print("{:s}".format(pattern.search(word).group('match_word')))  # 2 closing brackets added. (Noted in Errata)
+
