@@ -100,3 +100,34 @@ string3_strip = string3.strip()
 print("Output #29: strip: {0:s}".format(string3_strip))
 
 
+# `strip` functions [cont'd] ...Page18
+string4 = "$$Here's another string that has unwanted characters.__---++"
+print("Output #30: {0:s}".format(string4))
+string4 = "$$The unwanted characters have been removed.__---++"
+string4_strip = string4.strip('$_-+')
+print("Output #31: {0:s}".format(string4_strip))
+
+
+# `replace` function ...Page18
+string5 = "Let's replace the spaces in this sentence with other characters."
+string5_replace = string5.replace(" ", "!@!")
+print("Output #32 (with !@!): {0:s}".format(string5_replace))
+string5_replace = string5.replace(" ", ",")
+print("Output #33 (with commas): {0:s}".format(string5_replace))
+
+
+# `lower`, `upper`, `capitalize` functions ...Page18
+string6 = "Here's WHAT Happens WHEN You Use lower."
+print("Output #34: {0:s}".format(string6.lower()))
+string7 = "Here's what Happens when You Use UPPER."
+print("Output #35: {0:s}".format(string7.upper()))
+string5 = "here's WHAT Happens WHEN you use Capitalize."
+print("Output #36: {0:s}".format(string5.capitalize()))
+string5_list = string5.split()
+print("Output #37 (on each word):")
+for word in string5_list:
+    print("{0:s}".format(word.capitalize()))
+
+
+
+
