@@ -175,6 +175,19 @@ print("Output #46: yesterday: {0!s}".format(yesterday))
 eight_hours = timedelta(hours=-8)
 print("Output #47: {0!s} {1!s}".format(eight_hours.days, eight_hours.seconds))
 
+
+# Calculate the number of days between two dates ...Page24
+date_diff = today - yesterday
+print("Output #48: {0!s}".format(date_diff))
+print("Output #49: {0!s}".format(str(date_diff).split()[0]))
+
+
+# Create a string with a specific format from a date object ...Page24
+print("Output #50: {:s}".format(today.strftime('%m/%d/%Y')))
+print("Output #51: {:s}".format(today.strftime('%b %d, %Y')))
+print("Output #52: {:s}".format(today.strftime('%Y-%m-%d')))
+print("Output #53: {:s}".format(today.strftime('%B %d, %Y')))
+
                                 
                               
                                 
