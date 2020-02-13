@@ -248,6 +248,34 @@ a_new_list = a_list[:]
 print("Output #77: {}".format(a_new_list))
 
 
+# Use `+` to add two or more lists together  ...Page28
+a_longer_list = a_list + another_list
+print("Output #78: {}".format(a_longer_list))
+
+
+# Use `in` and `not in` to check whether specific elements are or are not in a list  ...Page28
+a = 2 in a_list
+print("Output #79: {}".format(a))
+if 2 in a_list:
+    print("Output #80: 2 is in {}.".format(a_list))
+b = 6 not in a_list
+print("Output #81: {}".format(b))
+if 6 not in a_list:
+    print("Output #82: 6 is not in {}.".format(a_list))
+
+
+# Use `append()` to add additional elements to the end of the list  ...Page28
+# Use `remove()` to remove specific elements from the list
+# Use `pop()` to remove elements from the end of the list
+a_list.append(4)
+a_list.append(5)
+a_list.append(6)
+print("Output #83: {}".format(a_list))
+a_list.remove(5)
+print("Output #84: {}".format(a_list))
+a_list.pop()
+a_list.pop()
+print("Output #85: {}".format(a_list))
     
     
     
