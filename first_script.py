@@ -188,6 +188,21 @@ print("Output #51: {:s}".format(today.strftime('%b %d, %Y')))
 print("Output #52: {:s}".format(today.strftime('%Y-%m-%d')))
 print("Output #53: {:s}".format(today.strftime('%B %d, %Y')))
 
+
+# Create a datetime object with a specific format from a string representing a date ...Page25
+date1 = today.strftime('%m/%d/%Y')
+date2 = today.strftime('%b %d, %Y')
+date3 = today.strftime('%Y-%m-%d')
+date4 = today.strftime('%B %d, %Y')
+# Two datetime objects and two date objects based on the four strings that have different date formats
+print("Output #54: {!s}".format(datetime.strptime(date1, '%m/%d/%Y')))
+print("Output #55: {!s}".format(datetime.strptime(date2, '%b %d, %Y')))
+# Show the date portion only
+print("Output #56: {!s}".format(datetime.date(datetime.strptime\
+                                              (date3, '%Y-%m-%d'))))
+print("Output #57: {!s}".format(datetime.date(datetime.strptime\
+                                              (date4, '%B %d, %Y'))))
+
                                 
                               
                                 
