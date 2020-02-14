@@ -145,7 +145,7 @@ print("Output #38: {0:d}".format(count))
 # Print the pattern each time it is found in the string  ...Page21
 string = "The quick brown fox jumps over the lazy dog."
 string_list = string.split()
-pattern = re.compile(r"(?P<match_word>The)", re.I)  # </match_word> was an error. (Noted in Errata)
+pattern = re.compile(r"(?P<match_word>The)", re.I)  # `</match_word>` was an error. (Noted in Errata)
 print("Output #39:")
 for word in string_list:
     if pattern.search(word):
@@ -310,6 +310,25 @@ my_lists = [[123,2,2,444], [22,6,6,444], [354,4,4,678], [236,5,5,678], \
 my_lists_sorted_by_index_3_and_0 = sorted(my_lists, key=itemgetter(3,0))
 print("Output #92: {}".format(my_lists_sorted_by_index_3_and_0))
 
+
+# Use parentheses to create a tuple  ...Page31
+my_tuple = ('x', 'y', 'z')
+print("Output #93: {}".format(my_tuple))
+print("Output #94: my_tuple has {} elements".format(len(my_tuple)))
+print("Output #95: {}".format(my_tuple[1]))
+longer_tuple = my_tuple + my_tuple
+print("Output #96: {}".format(longer_tuple))
+
+
+# Unpack tuples with the lefthand side of an assignment operator  ...Page31
+one, two, three = my_tuple
+print("Output #97: {0} {1} {2}".format(one, two, three))
+var1 = 'red'
+var2 = 'robin'
+print("Output #98: {} {}".format(var1, var2))
+# Swap values between variables  ...<Is this a tuple (as Page32 says)? It doesn't store elements in parentheses>
+var1, var2 = var2, var1
+print("Output #99: {} {}".format(var1, var2))
     
 
                                 
