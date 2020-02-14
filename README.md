@@ -23,15 +23,16 @@ Author's [blog post](https://cbrownley.wordpress.com/2016/03/02/foundations-for-
 
 ## 1. Python Basics *[P.1-58]*
 
+* **data types : numbers, strings, dates**
+* **data containers : lists `[]`, tuples `()`, dictionaries `{}`**
+* **programming concepts : control flow, functions, exceptions**
 * 'shebang' for Unix computers to find the version of Python to use (eg. `#!/usr/bin/env python3`) ...P.2
 * `chmod +x first_script.py` (in Terminal) to make the Python script executable ...P.6
 * `Ctrl+c` to stop a script ...P.7
 * Regular expressions (`re` module) ...P.19
 * good practice to `compile()` the regular expression (but not always necessary) ...P.20
 * good practice to use raw string notation (`r`) in regular expressions ...P.20
-* data types : numbers, strings, dates
-* data containers : lists, tuples, dictionaries
-* programming concepts : control flow, functions, exceptions
+* Python **dictionaries** are called associative arrays, key-value stores, and hashes in other programming languages ...P.32
 
 
 ## 2. Comma-Separated Values (CSV) Files *[P.59-100]*
