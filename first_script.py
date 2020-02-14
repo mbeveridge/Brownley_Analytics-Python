@@ -2,6 +2,7 @@
 from math import exp, log, sqrt  # Page13
 import re  # Page19
 from datetime import date, time, datetime, timedelta  # Page22
+from operator import itemgetter  # Page30
 # -*- coding: utf-8 -*-
 """
 Created on Mon Feb 10 15:45:49 2020
@@ -286,7 +287,7 @@ a_list.reverse()
 print("Output #87: {}".format(a_list))
 
 
-# Use sort() to sort a list in-place, meaning it changes the list  ...Page29
+# Use `sort()` to sort a list in-place, meaning it changes the list  ...Page29
 # To sort a list without changing the original list, make a copy first
 unordered_list = [3, 5, 1, 7, 2, 8, 4, 9, 0, 6]
 print("Output #88: {}".format(unordered_list))
@@ -294,6 +295,21 @@ list_copy = unordered_list[:]
 list_copy.sort()
 print("Output #89: {}".format(list_copy))
 print("Output #90: {}".format(unordered_list))
+
+
+# Use `sorted()` to sort a collection of lists by a position in the lists ...Page30
+my_lists = [[1,2,3,4], [4,3,2,1], [2,4,1,3]]
+my_lists_sorted_by_index_3 = sorted(my_lists, key=lambda index_value:\
+                                    index_value[3])
+print("Output #91: {}".format(my_lists_sorted_by_index_3))
+
+
+# Use `itemgetter()` to sort a collection of lists by two index positions ...Page30
+my_lists = [[123,2,2,444], [22,6,6,444], [354,4,4,678], [236,5,5,678], \
+            [578,1,1,290], [461,1,1,290]]
+my_lists_sorted_by_index_3_and_0 = sorted(my_lists, key=itemgetter(3,0))
+print("Output #92: {}".format(my_lists_sorted_by_index_3_and_0))
+
     
 
                                 
