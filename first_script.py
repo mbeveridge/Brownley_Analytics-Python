@@ -329,7 +329,13 @@ print("Output #98: {} {}".format(var1, var2))
 # Swap values between variables  ...<Is this a tuple (as Page32 says)? It doesn't store elements in parentheses>
 var1, var2 = var2, var1
 print("Output #99: {} {}".format(var1, var2))
-    
+
+
+# Convert tuples to lists and lists to tuples ...Page32
+my_list = [1, 2, 3]
+my_tuple = ('x', 'y', 'z')
+print("Output #100: {}".format(tuple(my_list)))
+print("Output #101: {}".format(list(my_tuple)))
 
                                 
                               
