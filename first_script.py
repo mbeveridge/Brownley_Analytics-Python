@@ -337,6 +337,22 @@ my_tuple = ('x', 'y', 'z')
 print("Output #100: {}".format(tuple(my_list)))
 print("Output #101: {}".format(list(my_tuple)))
 
-                                
-                              
-                                
+
+# Use curly braces to create a dictionary  ...Page33
+# Use a colon between keys and values in each pair
+# `len()` counts the number of key-value pairs in a dictionary
+empty_dict = { }
+a_dict = {'one':1, 'two':2, 'three':3}
+print("Output #102: {}".format(a_dict))
+print("Output #103: a_dict has {!s} elements".format(len(a_dict)))
+another_dict = {'x':'printer', 'y':5, 'z':['star', 'circle', 9]}
+print("Output #104: {}".format(another_dict))
+print("Output #105: another_dict also has {!s} elements"\
+      .format(len(another_dict)))
+
+
+# Use keys to access specific values in a dictionary  ...Page33
+print("Output #106: {}".format(a_dict['two']))
+print("Output #107: {}".format(another_dict['z']))  # 2 closing brackets added. (I notified Errata)
+
+
