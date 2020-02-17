@@ -205,6 +205,7 @@ print("Output #57: {!s}".format(datetime.date(datetime.strptime\
                                               (date4, '%B %d, %Y'))))
 
 
+# ----------
 
 
 # Use square brackets to create a list  ...Page26
@@ -397,6 +398,26 @@ ordered_dict3 = sorted(dict_copy.items(), key=lambda x: x[1], reverse=True)
 print("Output #122 (order by values, descending): {}".format(ordered_dict3))
 ordered_dict4 = sorted(dict_copy.items(), key=lambda x: x[1], reverse=False)
 print("Output #123 (order by values, ascending): {}".format(ordered_dict4))
+
+
+# ----------
+
+
+# if-else statement  ...Page37
+x=5
+if x>4 or x!=9:
+    print("Output #124: {}".format(x))
+else:
+    print("Output #124: x is not greater than 4")
+
+
+# if-elif-else statement  ...Page37
+if x>6:
+    print("Output #125: x is greater than six")
+elif x>4 and x==5:
+    print("Output #125: {}".format(x*x))
+else:
+    print("Output #125: x is not greater than 4")
 
 
 
