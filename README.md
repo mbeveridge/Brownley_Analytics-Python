@@ -33,14 +33,19 @@ Author's [blog post](https://cbrownley.wordpress.com/2016/03/02/foundations-for-
 * good practice to `compile()` the regular expression (but not always necessary) ...P.20
 * good practice to use raw string notation (`r`) in regular expressions ...P.20
 * Python **dictionaries** are called associative arrays, key-value stores, and hashes in other programming languages ...P.32
+* Control flow elements, including `if-elif-else` statements, `for` loops, `range` function, and `while` loops ...P.37
 
 
 ## 2. Comma-Separated Values (CSV) Files *[P.59-100]*
 
-* `csv` module
-* three types of conditional logic to filter for specific rows
-* two ways to filter for specific columns
-* multiple CSV files
+* **`csv` module**
+* **three types of conditional logic to filter for specific rows**
+* **two ways to filter for specific columns**
+* **multiple CSV files**
+* `csv` recognizes embedded commas and other complex patterns ...P.70
+* three ways to filter rows : (value in row) meets a condition, is in a set, matches a pattern ...P.72
+* Pandas provides `loc` function to select specific rows & columns ...P.74
+* two ways to filter columns : index values, headings ...P.79
 
 
 ## 3. Excel Files *[P.101-142]*
