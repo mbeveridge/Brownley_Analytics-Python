@@ -46,6 +46,7 @@ Author's [blog post](https://cbrownley.wordpress.com/2016/03/02/foundations-for-
 * three ways to filter rows : (value in row) meets a condition, is in a set, matches a pattern ...P.72
 * Pandas provides `loc` function to select specific rows & columns ...P.74
 * two ways to filter columns : index values, headings ...P.79
+* Pandas provides `drop` function to delete rows & columns ...P.85
 
 
 ## 3. Excel Files *[P.101-142]*
