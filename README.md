@@ -48,6 +48,7 @@ Author's [blog post](https://cbrownley.wordpress.com/2016/03/02/foundations-for-
 * two ways to filter columns : index values, headings ...P.79
 * Pandas provides `drop` function to delete rows & columns ...P.85
 * to count the files and the rows & columns in each file : `glob` locates all pathnames that match a specific pattern. `os` contains useful functions for parsing pathnames ...P.91
+* Pandas provides `concat` function to concatenate data from multiple files (`axis` argument for how to stack the dataframes) and `merge` function for SQL join-like operations ...P.96
 
 
 ## 3. Excel Files *[P.101-142]*
